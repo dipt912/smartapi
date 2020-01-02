@@ -1,0 +1,17 @@
+version: 2
+
+jobs:
+  build:
+    docker: 
+      - image: "circleci/node:9.6.1"
+    steps:
+      - checkout
+      - run: echo "npm installig"
+      - run: npm install
+      - run: echo "buiding up"
+      - run: npm run build
+workflows:
+  version: 2
+  buildrepo:
+    jobs:
+      - build

@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "script.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "build": "docker-compose up --build",
+    "builddown": "docker-compose down"
   },
   "keywords": [],
   "author": "",
